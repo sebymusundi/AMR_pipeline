@@ -6,12 +6,19 @@ The sequenced samples were previously identified as being resistant to commonly 
 The tools used in the pipeline are listed below and used agter guppy was used to basecall and barcode the reads.
 
 Fastqc    - Check the quality of the reads.
+
 Porechop  -  removal of adapters.
+
 Filtlong - Filtering of reads. 
+
 Flye     - de novo assembly of the reads.
+
 Quast - Checking the quality of the assembled genome.
-Bwa  - indexing the reads and mapping reads to assembled genome 
+
+Bwa  - indexing the reads and mapping reads to assembled genome.
+
 racon + medaka - polishing of the reads. 
+
 Abricate - identify AMR genes and plasmid
 
 
