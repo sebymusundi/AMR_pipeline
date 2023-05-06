@@ -5,6 +5,12 @@ The sequenced samples were previously identified as being resistant to commonly 
 
 The tools used in the pipeline are listed below and used after guppy was used to basecall and barcode the reads.
 
+### Quality control
+ 
+The quality of the nanopore reads were first assessed using FastQC. 
+
+
+
 Fastqc    - Check the quality of the reads.
 
 Porechop  -  removal of adapters.
