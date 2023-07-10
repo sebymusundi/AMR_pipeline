@@ -2,7 +2,7 @@
 // Define parameters 
 
 
-params.reads="/home/bioinfo/bioinfo/rachel_data/final_data/sample_08.fastq"
+params.reads="/home/bioinfo/bioinfo/rachel_data/final_data/*.fastq"
 params.outdir="/home/bioinfo/bioinfo/rachel_data/results"
 
 println "reads: $params.reads"
@@ -48,7 +48,6 @@ process porechop {
 
 		script:
 		"""
-		mkdir porechop_results
 		porechop -i ${reads} -o ${reads.baseName}_trimmed.fastq 
 		"""
 }
@@ -188,7 +187,6 @@ process reads_index {
 					bwa index ${assembled_file} 
 
 					"""
-
  }
 
 // map reads to the indexed genome 
