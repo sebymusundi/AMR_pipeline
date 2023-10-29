@@ -1,12 +1,14 @@
 
- ### Antimicrobial resistance genes pipeline
-The pipeline indicated below is to be used in identifying antimicrobial resistance genes using long reads sequenced from Oxford nanopore.
-The sequenced samples were previously identified as being resistant to commonly used antibiotics using antibiotics susceptibility tests (ASTs). 
+### Antimicrobial resistance genes pipeline
 
-The tools used in the pipeline are listed below and used after guppy was used to basecall and barcode the reads.
+The pipeline indicated below is to be used in identifying antimicrobial resistance genes using long reads sequenced from Oxford nanopore.
+The sequenced samples were previously identified as being resistant to commonly used antibiotics using antibiotics susceptibility tests (ASTs).
+
+The pipeline was run using nextflow. The raw reads were basecalled and demultiplexed using Guppy.
 
 ### Quality control
- 
+
+
 The quality of the nanopore reads were first assessed using FastQC. 
 
 
